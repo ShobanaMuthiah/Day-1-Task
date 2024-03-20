@@ -1,0 +1,17 @@
+DIFFERENCE BETWEEN HTTP 1.1 AND HTTP 2
+
+HTTP 1.1
+* High level Latency
+* It keeps all requests and responses into plain text format
+* Introducing persistent connection and piplining
+* Head-Of-Line blocking is a significant problem with optimizing connection efficiency in it.
+* It has single persistent connection to origin
+* It relies on transport layer to avoid buffer overflow
+
+HTTP 2
+* It decreases the latency from http 1.1
+* It uses binary framing layer to encapsulate all messgages in binary format
+* Cutting up the information into smaller packets which increase the flexibility of data transfer.
+* It establishes a single connection of objects between two machines.
+* It introduces multiplexing process to resolve the Head-Of-Line block in HTTP 1.1
+* It allows the client and server to implement their own flow control

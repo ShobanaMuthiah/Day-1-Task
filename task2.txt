@@ -1,0 +1,52 @@
+A blog about objects and its internal representation in Javascript
+
+* Object is collection of properties.
+* For Example:-
+        
+        We can imagine a Car
+        It has the features of 
+            1. steering wheel
+            2. Accelarator
+            3. Brake
+            4. Clutch
+            5. Engine
+            6. Tires 
+            7. Hand braker 
+            etc..
+        In this example the "Object" is set as "Car" and it's features are set as it's "Properties".
+
+* We can create an object with 2 types
+    1. using object initializer 
+    2. using constructor function
+
+* Syntax of object initializer:-
+    
+    var obj_name = { property_1 : value_1;
+                            ..
+                            ..
+                            ..
+                     property_n : value_n;
+                    };
+
+    Here we can denote the property names might be an identifier, or a number, or a steering
+
+    Example:-
+
+    var Car= { wheel: 4;
+               engine: "1000cc";
+               clutch: 5;
+             };
+
+* Example of using constructor functions to create an object
+ 
+  function Car(brand,year)
+  {
+    this.brand=brand;
+    this.year=year;     //'this' function assign values to their respective properties
+  }
+
+  assigning values to its's properties
+
+  var MyCar = new Car("hyundai",1967);
+
+  now the properties MyCar.brand and MyCar.year have it's respective values as 'hyundai' and '1967'
